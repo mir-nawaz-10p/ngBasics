@@ -1,0 +1,6 @@
+<div class="home">
+    <h1> Home </h1>
+    <div ng-repeat="menu in vm.menus">
+        <h2 ui-sref="{{::menu.state}}">{{::menu.title}}</h2>
+    </div>
+</div>

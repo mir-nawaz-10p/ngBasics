@@ -1,0 +1,15 @@
+<div class="fruit">
+    <h1>{{vm.title}}</h1>
+    <label>Search Fruit:
+        <input ng-model="vm.searchFruit">
+    </label>
+    <br/>
+    <label>Add Fruit:
+        <input ng-model="vm.addFruit">
+    </label>
+    <button ng-click="vm.addFruits(vm.addFruit)">Add</button>
+    <div ng-repeat="fruit in vm.fruits | filter: vm.searchFruit">
+      <p>{{fruit}} <button ng-click="vm.removeFruit(fruit)">-</button></p>
+    </div>
+    <h2 ui-sref="Home">Home</h2>
+</div>

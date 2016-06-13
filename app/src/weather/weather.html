@@ -1,0 +1,43 @@
+<div class="weather">
+    <h1>{{vm.title}}</h1>
+    <label>longitute:
+        <input ng-model="vm.location.lon">
+    </label>
+    <label>Latitude:
+        <input ng-model="vm.location.lat">
+    </label>
+    <button ng-click="vm.forecastWet(vm.location, 'LatLon')">Forecast</button>
+    <br/>
+    <label>City:
+        <input ng-model="vm.location.city">
+    </label>
+    <button ng-click="vm.forecastWet(vm.location, 'City')">Forecast</button>
+    <div class="forecast">
+        <h4 ng-bind="vm.forecast.location"></h4>
+        <table class="table table-condensed" ng-show="vm.forecast.temperatures">
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>Description</td>
+                    <td>Clouds</td>
+                    <td>Humidity</td>
+                    <td>Pressure</td>
+                    <td>Temp.</td>
+                    <td>Temp.</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="record in vm.forecast.temperatures">
+                    <td ng-bind="record.date | date:'short'"></td>
+                    <td ng-bind="record.description"></td>
+                    <td ng-bind="record.clouds"></td>
+                    <td ng-bind="record.humidity"></td>
+                    <td ng-bind="record.pressure"></td>
+                    <td ng-bind="record.min | centigrade: record.min"></td>
+                    <td ng-bind="record.max | centigrade: record.min"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 ui-sref="Home">Home</h2>
+</div>
