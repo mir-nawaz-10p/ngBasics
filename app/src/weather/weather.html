@@ -26,7 +26,7 @@
                     <td>Temp.</td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody ng-if="vm.forecast.temperatures">
                 <tr ng-repeat="record in vm.forecast.temperatures">
                     <td ng-bind="record.date | date:'short'"></td>
                     <td ng-bind="record.description"></td>
@@ -34,7 +34,7 @@
                     <td ng-bind="record.humidity"></td>
                     <td ng-bind="record.pressure"></td>
                     <td ng-bind="record.min | centigrade: record.min"></td>
-                    <td ng-bind="record.max | centigrade: record.min"></td>
+                    <td>{{record.max}}<centi-grade></td>
                 </tr>
             </tbody>
         </table>
