@@ -4,23 +4,22 @@
  * @description < description placeholder >
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular
-    .module('app.weather', [])
-    .config(configuration);
+    angular
+        .module('app.weather', [])
+        .config(configuration);
 
-  /* @ngInject */
-  function configuration($stateProvider){
-    $stateProvider
-     .state('Weather', {
-       url:'/weather',
-       templateUrl:'src/weather/weather.html',
-       controller: 'Weather as vm'
-     }
-    );
-  }
+    /* @ngInject */
+    function configuration($stateProvider) {
+        $stateProvider
+            .state('Weather', {
+                url: '/weather',
+                templateUrl: 'src/weather/weather.html',
+                controller: 'Weather as vm'
+            });
+    }
 
 }());

@@ -1,30 +1,30 @@
-(function(){
+(function() {
 
-  /* global module, inject */
+    /* global module, inject */
 
-  'use strict';
+    'use strict';
 
-  describe('Controller: Home', function(){
+    describe('Controller: Home', function() {
 
-    beforeEach(module('app.core'));
-    beforeEach(module('app.home'));
+        beforeEach(module('app.core'));
+        beforeEach(module('app.home'));
 
-    var ctrl;
-    var scope;
+        var ctrl;
+        var scope;
 
-    beforeEach(inject(function($controller, $injector){
+        beforeEach(inject(function($controller, $injector) {
 
-      scope = $injector.get('$rootScope');
+            scope = $injector.get('$rootScope');
 
-      ctrl = $controller('Home', {
-        //add injectable services
-      });
+            ctrl = $controller('Home', {
+                //add injectable services
+            });
 
-    }));
+        }));
 
-    it('should do nothing', function(){
-      expect(true).toBe(false);
+        it('should do nothing', function() {
+            expect(true).toBe(false);
+        });
+
     });
-
-  });
 }());

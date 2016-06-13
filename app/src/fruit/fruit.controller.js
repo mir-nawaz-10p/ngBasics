@@ -15,8 +15,8 @@
     /* @ngInject */
     function Fruit() {
         var vm = this;
-        vm.title = "Fruit";
-        vm.fruits = ["Apple", "Banana"];
+        vm.title = 'Fruit';
+        vm.fruits = ['Apple', 'Banana'];
         vm.addFruits = addFruits;
         vm.removeFruit = removeFruit;
 
@@ -25,8 +25,9 @@
                 vm.fruits.push(fruit);
             }
         }
+
         function removeFruit(fruit) {
-          var index = vm.fruits.indexOf(fruit);
+            var index = vm.fruits.indexOf(fruit);
             if (index >= 0) {
                 vm.fruits.splice(index, 1);
             }

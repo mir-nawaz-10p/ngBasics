@@ -4,23 +4,22 @@
  * @description < description placeholder >
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular
-    .module('app.fruit', [])
-    .config(configuration);
+    angular
+        .module('app.fruit', [])
+        .config(configuration);
 
-  /* @ngInject */
-  function configuration($stateProvider){
-    $stateProvider
-     .state('Fruit', {
-       url:'/fruit',
-       templateUrl:'src/fruit/fruit.html',
-       controller: 'Fruit as vm'
-     }
-    );
-  }
+    /* @ngInject */
+    function configuration($stateProvider) {
+        $stateProvider
+            .state('Fruit', {
+                url: '/fruit',
+                templateUrl: 'src/fruit/fruit.html',
+                controller: 'Fruit as vm'
+            });
+    }
 
 }());

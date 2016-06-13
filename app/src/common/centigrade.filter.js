@@ -6,19 +6,19 @@
  * @returns {object} < returns placeholder >
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular
-    .module('app.common')
-    .filter('centigrade', centigrade);
+    angular
+        .module('app.common')
+        .filter('centigrade', centigrade);
 
-  /* @ngInject */
-  function centigrade(){
-    return function (input){
-      return input + ' C';
-    };
-  }
+    /* @ngInject */
+    function centigrade() {
+        return function(input) {
+            return input + ' C';
+        };
+    }
 
 }());

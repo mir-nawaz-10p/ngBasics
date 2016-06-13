@@ -1,7 +1,7 @@
 module.exports = {
-  app: {
-    src: [
-      'app/index.html'
-    ]
-  }
+    app: {
+        src: [
+            'app/index.html'
+        ]
+    }
 };

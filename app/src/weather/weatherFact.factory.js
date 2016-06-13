@@ -50,7 +50,7 @@
             return $http.get(route)
                 .then(function(res) {
                     if (res.data.cod !== '200') {
-                        throw "Ooops something went wrong. try again";
+                        throw {error: 'Ooops something went wrong. try again'};
                     }
                     var response = res.data;
                     var forecast = [];
@@ -63,7 +63,7 @@
                             min: item.temp.min,
                             max: item.temp.max,
                             description: item.weather[0].description
-                        })
+                        });
                     });
                     return $q.when({
                         location: response.city.name + ', ' + response.city.country,

@@ -4,13 +4,13 @@
  * @description Core is where the Magma is
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular.module('app.core', [
-    'ui.router',
-    'restangular'
-  ]);
+    angular.module('app.core', [
+        'ui.router',
+        'restangular'
+    ]);
 
 }());

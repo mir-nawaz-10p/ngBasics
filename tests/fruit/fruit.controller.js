@@ -1,30 +1,30 @@
-(function(){
+(function() {
 
-  /* global module, inject */
+    /* global module, inject */
 
-  'use strict';
+    'use strict';
 
-  describe('Controller: Fruit', function(){
+    describe('Controller: Fruit', function() {
 
-    beforeEach(module('app.core'));
-    beforeEach(module('app.fruit'));
+        beforeEach(module('app.core'));
+        beforeEach(module('app.fruit'));
 
-    var ctrl;
-    var scope;
+        var ctrl;
+        var scope;
 
-    beforeEach(inject(function($controller, $injector){
+        beforeEach(inject(function($controller, $injector) {
 
-      scope = $injector.get('$rootScope');
+            scope = $injector.get('$rootScope');
 
-      ctrl = $controller('Fruit', {
-        //add injectable services
-      });
+            ctrl = $controller('Fruit', {
+                //add injectable services
+            });
 
-    }));
+        }));
 
-    it('should do nothing', function(){
-      expect(true).toBe(false);
+        it('should do nothing', function() {
+            expect(true).toBe(false);
+        });
+
     });
-
-  });
 }());

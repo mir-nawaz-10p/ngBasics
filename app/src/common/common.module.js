@@ -4,12 +4,12 @@
  * @description Host of all the cross cutting source
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular.module('app.common', [
+    angular.module('app.common', [
 
-  ]);
+    ]);
 
 }());

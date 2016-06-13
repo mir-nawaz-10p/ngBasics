@@ -1,25 +1,25 @@
-(function(){
+(function() {
 
-  /* global module, inject */
+    /* global module, inject */
 
-  'use strict';
+    'use strict';
 
-  describe('Filter: centigrade', function(){
+    describe('Filter: centigrade', function() {
 
-    beforeEach(module('app.core'));
-    beforeEach(module('app.common'));
+        beforeEach(module('app.core'));
+        beforeEach(module('app.common'));
 
-    var centigrade;
+        var centigrade;
 
-    beforeEach(inject(function (centigradeFilter){
+        beforeEach(inject(function(centigradeFilter) {
 
-      centigrade = centigradeFilter;
+            centigrade = centigradeFilter;
 
-    }));
+        }));
 
-    it('should not do anything for now', function(){
-      expect(true).toBe(false);
+        it('should not do anything for now', function() {
+            expect(true).toBe(false);
+        });
+
     });
-
-  });
 }());

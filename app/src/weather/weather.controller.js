@@ -15,7 +15,7 @@
     /* @ngInject */
     function Weather(weatherFact) {
         var vm = this;
-        vm.title = "Weather";
+        vm.title = 'Weather';
         vm.location = {
             lat: 24.8,
             lon: 67.0,
@@ -38,14 +38,14 @@
          * My Description rules
          */
         function forecastWet(loc, type) {
-            weatherFact["forecastWeatherWith".concat(type)](loc)
+            weatherFact['forecastWeatherWith'.concat(type)](loc)
                 .then(function(res) {
                     vm.forecast = {
                         temperatures: res.forecast,
                         location: res.location
                     };
                 }).catch(function(res) {
-                    alert(res);
+                    alert(res.error);
                 });
         }
     }

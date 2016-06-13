@@ -1,30 +1,29 @@
-(function(){
+(function() {
 
-  /* global module, inject */
+    /* global module, inject */
 
-  'use strict';
+    'use strict';
 
-  describe('Controller: WelcomeCtrl', function(){
+    describe('Controller: WelcomeCtrl', function() {
 
-    beforeEach(module('app.core'));
-    beforeEach(module('app.welcome'));
+        beforeEach(module('app.core'));
+        beforeEach(module('app.welcome'));
 
-    var ctrl;
-    var scope;
+        var ctrl;
+        var scope;
 
-    beforeEach(inject(function($controller, $injector){
+        beforeEach(inject(function($controller, $injector) {
 
-      scope = $injector.get('$rootScope');
-      ctrl = $controller('Welcome', {
-        //add injectable services
-      });
+            scope = $injector.get('$rootScope');
+            ctrl = $controller('Welcome', {
+                //add injectable services
+            });
 
-    }));
+        }));
 
-    it('should do nothing', function (){
-      expect(true).toBe(false);
+        it('should do nothing', function() {
+            expect(true).toBe(false);
+        });
+
     });
-
-  });
 }());
-

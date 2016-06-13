@@ -4,23 +4,22 @@
  * @description < description placeholder >
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  angular
-    .module('app.home', [])
-    .config(configuration);
+    angular
+        .module('app.home', [])
+        .config(configuration);
 
-  /* @ngInject */
-  function configuration($stateProvider){
-    $stateProvider
-     .state('Home', {
-       url:'/home',
-       templateUrl:'src/home/home.html',
-       controller: 'Home as vm'
-     }
-    );
-  }
+    /* @ngInject */
+    function configuration($stateProvider) {
+        $stateProvider
+            .state('Home', {
+                url: '/home',
+                templateUrl: 'src/home/home.html',
+                controller: 'Home as vm'
+            });
+    }
 
 }());

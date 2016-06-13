@@ -1,25 +1,25 @@
-(function(){
+(function() {
 
-  /* global module, inject */
+    /* global module, inject */
 
-  'use strict';
+    'use strict';
 
-  describe('Factory: weather', function(){
+    describe('Factory: weather', function() {
 
-    beforeEach(module('app.core'));
-    beforeEach(module('app.weather'));
+        beforeEach(module('app.core'));
+        beforeEach(module('app.weather'));
 
-    var weather;
+        var weather;
 
-    beforeEach(inject(function($injector){
+        beforeEach(inject(function($injector) {
 
-      weather = $injector.get('weather');
+            weather = $injector.get('weather');
 
-    }));
+        }));
 
-    it('should do nothing', function(){
-      expect(true).toBe(false);
+        it('should do nothing', function() {
+            expect(true).toBe(false);
+        });
+
     });
-
-  });
 }());

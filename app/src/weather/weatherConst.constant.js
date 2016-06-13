@@ -13,17 +13,17 @@
    </pre>
  */
 
-(function(){
+(function() {
 
-  'use strict';
+    'use strict';
 
-  var weatherConst = {
-    appid: '3a1cce9ecd6dfd828222d656276f9344',
-    baseUrl: 'http://api.openweathermap.org/data/2.5/'
-  };
+    var weatherConst = {
+        appid: '3a1cce9ecd6dfd828222d656276f9344',
+        baseUrl: 'http://api.openweathermap.org/data/2.5/'
+    };
 
-	angular
-		.module('app.weather')
-		.constant('weatherConst', weatherConst);
+    angular
+        .module('app.weather')
+        .constant('weatherConst', weatherConst);
 
 }());

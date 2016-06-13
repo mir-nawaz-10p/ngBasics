@@ -19,8 +19,8 @@
 
         function init() {
             vm.menus = [
-                { state: "Fruit", title: "Fruit" },
-                { state: "Weather", title: "Weather" }
+                { state: 'Fruit', title: 'Fruit' },
+                { state: 'Weather', title: 'Weather' }
             ];
         }
     }
